@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner</title>
+</head>
+<body>
+    
+    <div class="header">
+        <a><h1>Hi! Welcome to tiny URL Shortner Web Application </h1></a>
+        <div class="header-right">
+          <a class="active" href="{{ url_for('home_page') }}">Home</a>
+          <a href="{{ url_for('db_page') }}">Data Center</a>
+        </div>
+    </div>
+    <div id="main-body">
+        <div>
+            <form action="/" method="post">
+                <label>Enter your Big URL:</label>
+                <input type="text" name="in_1" placeholder="Please enter your huge url here" required>
+                <input type="submit" value="Submit"><br><br>
+            </form>
+        </div>
+        <div>
+            <label>Your small URL</label>
+            <input type="text" value="{{shorter}}" id="myInput" placeholder="Get your Short URL here">
+            <input type="submit" onclick="myFunction()" value="Get URL">
+        </div>
+    </div>
+    
+</body>
+</html>

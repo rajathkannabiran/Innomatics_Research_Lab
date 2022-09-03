@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <div class="header">
+        <a><h1>History of all URl shortenings:</h1></a>
+        <div class="header-right">
+          <a class="active" href="{{ url_for('home_page') }}">Home</a>
+          <a href="{{ url_for('db_page') }}">Data Center</a>
+        </div>
+    </div>
+    
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 60%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 4px;
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+    <div style="overflow-x: auto;">
+    <table>
+    
+        <tr>
+            <th>S.no</th>
+            <th>Original URL</th>
+            <th>Final URL</th>
+        </tr>
+    
+       {% for url in url_shorter %}
+        <tr>
+            <td>{{url.id}}</td>
+            <td>{{url.user_url}}</td>
+            <td>{{url.shorter}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    </div>  
+
+</body>
+</html>
