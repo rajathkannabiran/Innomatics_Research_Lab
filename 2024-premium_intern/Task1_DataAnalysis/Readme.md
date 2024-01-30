@@ -16,8 +16,7 @@ the majority of them?
    e. What is the maximum age of a freelancer?
 7. Which skill is the most important for a data scientist?
 8. How many interns selected “Prompt Engineering” as the most important skill?
-9. Let’s do our final analysis now. Let’s try to learn about the institute from where interns
-have completed or are pursuing their data science courses.
-   a. How many interns didn’t mention the name of the data science institute from
-   b. where they completed or are currently pursuing the courses?
-b. How many interns mentioned Innomatics as their data science institute?
+9. Let’s do our final analysis now.<br>
+   Let’s try to learn about the institute from where interns have completed or are pursuing their data science courses.<br>
+   a. How many interns didn’t mention the name of the data science institute from where they completed or are currently pursuing the courses?<br>
+   b. How many interns mentioned Innomatics as their data science institute?<br>
