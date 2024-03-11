@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+
+    <style>
+        .text-box {
+                padding: 5px;
+                width: 500px;
+                padding-left: 2%;
+        }
+        input[name="email"] {
+            width: 500px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <form action="/email-checker", method="post">
+        <h1 class="email-header">
+            Email Id Validator
+        </h1>
+        <div class="text-box">
+        <p><b>Email Id: </b></p>
+        <input type="text" name="email" placeholder="Enter the Email Id"> <br> <br>
+        <input type="submit" name="submit" value="CHECK"> <br> <br>
+        </div>
+    </form>
+    
+</body>
+</html>
